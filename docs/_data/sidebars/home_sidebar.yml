@@ -13,7 +13,7 @@ entries:
       title: bayes_coin_flip
       url: core.html
     - output: web,pdf
-      title: 01-gr-use-core
+      title: Title
       url: 01-gr-use-core.html
     output: web
     title: bayesian_reasoning_v0
