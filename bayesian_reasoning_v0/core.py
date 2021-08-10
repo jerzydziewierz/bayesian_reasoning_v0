@@ -8,11 +8,17 @@ __all__ = ['coin_model', 'ja', 'phi_set', 'observation_single_1', 'observation_s
            'BayesianBeliefUpdateReport']
 
 # Cell
-
+from lib.lib_nicefloat import *
 from std_init import *
+jax.config.update('jax_platform_name', 'cpu')
+
 ja=lambda x: jax.numpy.array(x)
 
 def coin_model(real_hidden_phi=0.5 ,observation_count=10):
+    """
+    a model of a coin: simulates coin tosses.
+
+    """
     observations = jax.numpy.array(numpy.random.random(observation_count)<real_hidden_phi,dtype=jax.numpy.int32).reshape(observation_count,1)
     return observations
 

@@ -16,11 +16,27 @@ This file will become your README and also the index of your documentation.
 ## How to use
 
 ```python
-import bayesian_reasoning_v0
-dir(bayesian_reasoning_v0)
+from bayesian_reasoning_v0.core import *
+from lib.lib_nicefloat import *
 ```
 
+    WARNING:absl:No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+
+
 ```python
+pd(observation_small_set_0)
+```
+
+
+
+
+    [[D=  0  , ],
+     [D=  0  , ]]
+
+
+
+```python
+
 this_observation_set = observation_small_set_0
 this_phi_prior_belief_set = prior_belief_set_uninformative
 
@@ -38,3 +54,19 @@ BayesianBeliefUpdateReport(
                         posterior_belief_set=posterior_belief_set)
 
 ```
+
+    for observations {D}: 
+    [[D=  0  , ],
+     [D=  0  , ]]
+    
+    for parameter set      {φ}  = [φ=0.200  , φ=0.500  , φ=0.800  , ]
+    and prior belief set b({φ}) = [    333mR,     333mR,     333mR, ]
+    
+    for model parameter φ=0.200  ,  with PriorBelief =     333mR, , UpdatedBelief =     688mR, , change of  +355mR 
+    for model parameter φ=0.500  ,  with PriorBelief =     333mR, , UpdatedBelief =     269mR, , change of   -64mR 
+    for model parameter φ=0.800  ,  with PriorBelief =     333mR, , UpdatedBelief =      43mR, , change of  -290mR 
+    
+    
+                           {φ}  = [φ=0.200  , φ=0.500  , φ=0.800  , ]
+    posterior belief set b({φ}) = [    688mR,     269mR,      43mR, ]
+
