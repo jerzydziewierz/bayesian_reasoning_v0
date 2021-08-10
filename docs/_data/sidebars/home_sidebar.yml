@@ -11,7 +11,7 @@ entries:
       url: /
     - output: web,pdf
       title: Title
-      url: quick_theory.html
+      url: 01-gr-use-core.html
     - output: web,pdf
       title: What happened.
       url: 10-gr-bayesian-modeling-missing-link.html

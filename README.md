@@ -10,7 +10,7 @@
 
 ## How to use
 
-Read the [chapter 1](10_quick_theory.ipynb).  (link here when I figure out how to add it)
+Read the [chapter 1](10-gr-bayesian-modeling-missing-link.ipynb).  (link here when I figure out how to add it)
 
 Then use the the example provided to express your problem as a belief update problem. Profit!
 
