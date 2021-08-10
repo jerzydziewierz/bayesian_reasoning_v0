@@ -2,26 +2,26 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"coin_model": "00_core.ipynb",
-         "ja": "00_core.ipynb",
-         "phi_set": "00_core.ipynb",
-         "observation_single_1": "00_core.ipynb",
-         "observation_single_0": "00_core.ipynb",
-         "observation_small_set_0": "00_core.ipynb",
-         "observation_small_set_balanced": "00_core.ipynb",
-         "observation_small_set_1": "00_core.ipynb",
-         "observation_large_set_neutral": "00_core.ipynb",
-         "observation_large_set_biased": "00_core.ipynb",
-         "prior_belief_set_fair": "00_core.ipynb",
-         "prior_belief_set_bias_0": "00_core.ipynb",
-         "prior_belief_set_bias_1": "00_core.ipynb",
-         "prior_belief_set_uninformative": "00_core.ipynb",
-         "likelihood_vector_fn": "00_core.ipynb",
-         "likelihood_observation_set_fn": "00_core.ipynb",
-         "marginal_fn": "00_core.ipynb",
-         "BayesianBeliefUpdate_singlePhi": "00_core.ipynb",
-         "BayesianBeliefUpdate": "00_core.ipynb",
-         "BayesianBeliefUpdateReport": "00_core.ipynb"}
+index = {"coin_model": "50_core.ipynb",
+         "ja": "50_core.ipynb",
+         "phi_set": "50_core.ipynb",
+         "observation_single_1": "50_core.ipynb",
+         "observation_single_0": "50_core.ipynb",
+         "observation_small_set_0": "50_core.ipynb",
+         "observation_small_set_balanced": "50_core.ipynb",
+         "observation_small_set_1": "50_core.ipynb",
+         "observation_large_set_neutral": "50_core.ipynb",
+         "observation_large_set_biased": "50_core.ipynb",
+         "prior_belief_set_fair": "50_core.ipynb",
+         "prior_belief_set_bias_0": "50_core.ipynb",
+         "prior_belief_set_bias_1": "50_core.ipynb",
+         "prior_belief_set_uninformative": "50_core.ipynb",
+         "likelihood_vector_fn": "50_core.ipynb",
+         "likelihood_observation_set_fn": "50_core.ipynb",
+         "marginal_fn": "50_core.ipynb",
+         "BayesianBeliefUpdate_singlePhi": "50_core.ipynb",
+         "BayesianBeliefUpdate": "50_core.ipynb",
+         "BayesianBeliefUpdateReport": "50_core.ipynb"}
 
 modules = ["core.py"]
 
