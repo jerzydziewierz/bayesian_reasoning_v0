@@ -10,11 +10,11 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: Title
-      url: 01-gr-use-core.html
-    - output: web,pdf
       title: Extended Rant Version
-      url: 10-gr-bayesian-modeling-missing-link.html
+      url: 10-gr-extended-rant-version.html
+    - output: web,pdf
+      title: Worked example - coin toss - is the coin fair?
+      url: 21-gr-worked-example-coin-toss.html
     - output: web,pdf
       title: bayes_coin_flip
       url: core.html

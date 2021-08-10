@@ -1,8 +1,8 @@
 {
   "bayesian_reasoning_v0": {
     "Overview": "/",
-    "Title": "01-gr-use-core.html",
-    "Extended Rant Version": "10-gr-bayesian-modeling-missing-link.html",
+    "Extended Rant Version": "10-gr-extended-rant-version.html",
+    "Worked example - coin toss - is the coin fair?": "21-gr-worked-example-coin-toss.html",
     "bayes_coin_flip": "core.html"
   }
 }
