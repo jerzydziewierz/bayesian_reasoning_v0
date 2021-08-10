@@ -1,6 +1,6 @@
 ---
 
-title: What happened.
+title: Extended Rant Version
 
 
 keywords: fastai
@@ -448,7 +448,9 @@ $$b(\phi|D) \leftarrow b(\phi) \times \frac{l(D|\phi)}{  \sum_{\alpha \ \in \ \{
 <p>Why marginal? this word is not to be confused with things like "unimportant", "extreme", or "bad". The word "marginal" is just a code-word that came from the depths of history. One used to write the results of an experiment (when taking the data) in a table (on paper!). Then, came the time to analise the data. Since copying the numbers by hand is time consuming, one would use the margin of the page to squeeze in additional scribblings. Hence, these computed numbers are "marginal".</p>
 <p>Why "evidence"? I am not sure, but what I do understand is that again, the name-word, code-word "evidence" does not have anything to do with common-sense meaning of that word. It does not mean "certainty", "proof" , "confirmation", "verification", "display", "demonstration", e.t.c. Here we are only using this word as a name for a certain operation.</p>
 <p>As hinted above, the value of the marginal probability, $m(D)$ is calculated by summing (or integrating) the likelihood function of $D$ for all of the considered values of $\phi$, weighted by the prior belief in $\phi$.</p>
-<p>$m(D) = \sum_{\alpha\in\{\phi\}}{l(D|\alpha)b(\alpha})$</p>
+<p>{% raw %}
+$$m(D) = \sum_{\alpha\in\{\phi\}}{l(D|\alpha)b(\alpha})$$
+{% endraw %}</p>
 <p>What we get in effect, is a scaling, or normalization term that makes the units and scale of belief and likelihood match.</p>
 <p>In the original formula, the same thing is denoted as $p(D)$. Which is triple as confusing because (a) requires an integral or summation over all $\phi$, (b) it integrates to more than 1.0 and hence (c) it has none of the properties of the other $p()$'s. Uhh. (?!?!?).</p>
 <p>If you are confused, I do not blame you.</p>
@@ -492,7 +494,8 @@ $$b(\phi|D) \leftarrow b(\phi) \times \frac{l(D|\phi)}{  \sum_{\alpha \ \in \ \{
 <p>{% raw %}
 $$b_{\phi, updated} \ = \ b(\phi|D) \leftarrow  b_{\phi, prior} \times \frac{l()}{m()} \ = \ b(\phi) \times \frac{l(D|\phi)}{  m(D,l(),\{\phi\}, b(\{\phi\})) } \ = \ b(\phi) \times \frac{l(D|\phi)}{  \sum_{\alpha \ \in \ \{\phi\}}{(l(D|\alpha)b(\alpha))} }$$
 {% endraw %}</p>
-<p>Hence, it is much more enlightening to say that the "Bayes Factor", the ratio $\frac{l()}{m()}$ tells us how we should modify our prior belief, given the data point $D$. This factor can be less than one, or more than one. It could be close to zero if $D$ is unlikely, or it could be tending to infinity if our prior belief was very very low. The "Bayes Factor" is composed of the interplay between the likelihood function and our prior belief about all possible $\{ \phi \}$. Seeing it this way dispels any magic about it.</p>
+<p>Hence, it is much more enlightening to say that the "Bayes Factor" -- the ratio $\frac{l()}{m()}$ -- tells us how we should modify our prior belief, given the data point $D$.</p>
+<p>This factor can be less than one, or more than one. It could be close to zero if $D$ is unlikely, or it could be tending to infinity if our prior belief was very very low. The "Bayes Factor" is composed of the interplay between the likelihood function and our prior belief about all possible $\{ \phi \}$. Seeing it this way dispels any magic about it.</p>
 
 </div>
 </div>

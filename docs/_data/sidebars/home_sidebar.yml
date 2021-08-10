@@ -13,7 +13,7 @@ entries:
       title: Title
       url: 01-gr-use-core.html
     - output: web,pdf
-      title: What happened.
+      title: Extended Rant Version
       url: 10-gr-bayesian-modeling-missing-link.html
     - output: web,pdf
       title: bayes_coin_flip
