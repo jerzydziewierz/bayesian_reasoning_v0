@@ -31,7 +31,7 @@ nb_path: "10-gr-extended-rant-version.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="What-happened">What happened<a class="anchor-link" href="#What-happened"> </a></h1><p>I do not normally write blog posts.</p>
+<h2 id="What-happened">What happened<a class="anchor-link" href="#What-happened"> </a></h2><p>I do not normally write blog posts.</p>
 <p>Today is not a normal day tough.</p>
 <p>I believe that I have found a missing link in my understanding of bayesian modelling theory.</p>
 <p>This is not so much about the bayes belief update equation. It's good. The problem is that the notation is confusing, making it difficult to distinguish and source(compute, obtain) the various terms in the equation, in connection to the real-world phenomena. And then, when solving a real world problem, this is not even where you put most of the time-effort in.</p>
@@ -157,7 +157,7 @@ $$p( \phi | D) = \frac{p(D|\phi)}{p(D)}\times p(\phi)$$
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="The-stage-star">The stage star<a class="anchor-link" href="#The-stage-star"> </a></h1><p>Let's use function symbols, $f(something)$ :</p>
+<h2 id="The-stage-star">The stage star<a class="anchor-link" href="#The-stage-star"> </a></h2><p>Let's use function symbols, $f(something)$ :</p>
 <ul>
 <li>$b$ for belief, both prior and posterior,</li>
 <li>$l$ is for likelihood, </li>
@@ -181,7 +181,7 @@ $$b(\phi|D) \leftarrow \frac{l(D|\phi)}{m(D)} \times b(\phi)$$
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="The-ugly-duck">The ugly duck<a class="anchor-link" href="#The-ugly-duck"> </a></h1><p>The marginal probability $m(D)$ is also sometimes called "evidence". It is calculated by summing (or integrating) the likelihood over all considered values of $\phi$, weighted by the prior belief in $\phi$.</p>
+<h2 id="The-ugly-duck">The ugly duck<a class="anchor-link" href="#The-ugly-duck"> </a></h2><p>The marginal probability $m(D)$ is also sometimes called "evidence". It is calculated by summing (or integrating) the likelihood over all considered values of $\phi$, weighted by the prior belief in $\phi$.</p>
 <p>{% raw %}
 $$m(D) = \sum_{\phi}{l(D|\phi)b(\phi)}$$
 {% endraw %}</p>
