@@ -23,8 +23,9 @@ If you have been paying attention at school, you might think that bayes update r
 {% raw %}
 $$p( A | B) = \frac{p(B|A)p(A)}{p(B)}$$
 {% endraw %}
-> [wikipedia:Bayes Theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem)> ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bayes%27_Theorem_MMB_01.jpg/220px-Bayes%27_Theorem_MMB_01.jpg)
-is all that it takes.
+> [wikipedia:Bayes Theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem)> > ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bayes%27_Theorem_MMB_01.jpg/220px-Bayes%27_Theorem_MMB_01.jpg)
+
+You might think that this equation is all that it takes.
 
 By looking at the examples in the wiki, you might even get a feeling that you understand it. 
 
