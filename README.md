@@ -20,9 +20,6 @@ from bayesian_reasoning_v0.core import *
 from lib.lib_nicefloat import *
 ```
 
-    WARNING:absl:No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
-
-
 ```python
 pd(observation_small_set_0)
 ```
