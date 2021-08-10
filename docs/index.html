@@ -1,13 +1,13 @@
 ---
 
-title: What happened.
+title: Not a different way to do reasoning
 
 
 keywords: fastai
 sidebar: home_sidebar
 
-
-
+summary: "After reading this, you will be able to use Bayesian reasoning for your project."
+description: "After reading this, you will be able to use Bayesian reasoning for your project."
 nb_path: "index.ipynb"
 ---
 <!--
@@ -31,15 +31,36 @@ nb_path: "index.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p>After reading this, you will be able to use Bayesian reasoning for your project.</p>
-</blockquote>
+<h2 id="Who-should-read-this">Who should read this<a class="anchor-link" href="#Who-should-read-this"> </a></h2><p>If you had a look at a pro toolbox like <a href="https://docs.pymc.io/">PYMC3</a> and you feel like you banged yer head, this is the place to get it mended.</p>
+<p><strong>My promise is this</strong>: After reading this, you will be able to use Bayesian reasoning for your project, and use more advanced books.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Install">Install<a class="anchor-link" href="#Install"> </a></h2>
+<h2 id="What-happened.">What happened.<a class="anchor-link" href="#What-happened."> </a></h2><p>I do not normally write blog posts.</p>
+<p>Today is not a normal day tough.</p>
+<p>I believe that I have found a missing link in my understanding of bayesian modelling theory.</p>
+<p>This is not so much about the bayes belief update equation. It's good. The problem is that the notation is confusing, making it difficult to distinguish and source(compute, obtain) the various terms in the equation, and connect themto the real-world phenomena.</p>
+<p>If you have been paying attention at school, you might think that bayes update rule:</p>
+<p>{% raw %}
+$$p( A | B) = \frac{p(B|A)p(A)}{p(B)}$$
+{% endraw %}</p>
+<blockquote><p><a href="https://en.wikipedia.org/wiki/Bayes%27_theorem">wikipedia:Bayes Theorem</a>&gt; <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bayes%27_Theorem_MMB_01.jpg/220px-Bayes%27_Theorem_MMB_01.jpg" alt="">
+is all that it takes.</p>
+</blockquote>
+<p>By looking at the examples in the wiki, you might even get a feeling that you understand it.</p>
+<p>However, How does one apply this to problem X that is not described in the wiki?</p>
+<p>It turns out that even professional data scientists (that I have met) are confused as to how to use this simple equation in practice.</p>
+<p>In this write-up, I will explain why, what to do about it, and give a fairly universal live demo that can be adapted and extended for your problem.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Install-the-toolbox">Install the toolbox<a class="anchor-link" href="#Install-the-toolbox"> </a></h2>
 </div>
 </div>
 </div>
@@ -66,7 +87,7 @@ nb_path: "index.ipynb"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="I-want-a-quicker-way.">I want a quicker way.<a class="anchor-link" href="#I-want-a-quicker-way."> </a></h1><p>Here you go:</p>
+<h2 id="I-want-a-quicker-way.">I want a quicker way.<a class="anchor-link" href="#I-want-a-quicker-way."> </a></h2><p>Here you go:</p>
 
 </div>
 </div>
@@ -377,8 +398,15 @@ posterior belief set b({φ}) = [    688mR,     269mR,      43mR]
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="I-am-not-convinced">I am not convinced<a class="anchor-link" href="#I-am-not-convinced"> </a></h1><p>Contact me on LinkedIn and tell me why I am wrong.</p>
+<h2 id="I-am-not-convinced">I am not convinced<a class="anchor-link" href="#I-am-not-convinced"> </a></h2><p>Contact me on LinkedIn and tell me why I am wrong.</p>
 <p><a href="https://www.linkedin.com/in/dr-george-rey-dziewierz/">https://www.linkedin.com/in/dr-george-rey-dziewierz/</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
 
 </div>
 </div>

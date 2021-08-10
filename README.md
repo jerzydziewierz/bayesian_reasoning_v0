@@ -1,10 +1,43 @@
-# What happened.
-
-
-
+# Not a different way to do reasoning
 > After reading this, you will be able to use Bayesian reasoning for your project.
 
-## Install
+
+## Who should read this
+
+If you had a look at a pro toolbox like [PYMC3](https://docs.pymc.io/) and you feel like you banged yer head, this is the place to get it mended.
+
+**My promise is this**: After reading this, you will be able to use Bayesian reasoning for your project, and use more advanced books. 
+
+## What happened.
+
+I do not normally write blog posts.
+
+Today is not a normal day tough. 
+
+I believe that I have found a missing link in my understanding of bayesian modelling theory.
+
+This is not so much about the bayes belief update equation. It's good. The problem is that the notation is confusing, making it difficult to distinguish and source(compute, obtain) the various terms in the equation, and connect themto the real-world phenomena.
+
+If you have been paying attention at school, you might think that bayes update rule:
+
+{% raw %}
+$$p( A | B) = \frac{p(B|A)p(A)}{p(B)}$$
+{% endraw %}
+> [wikipedia:Bayes Theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem)> ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bayes%27_Theorem_MMB_01.jpg/220px-Bayes%27_Theorem_MMB_01.jpg)
+is all that it takes.
+
+By looking at the examples in the wiki, you might even get a feeling that you understand it. 
+
+However, How does one apply this to problem X that is not described in the wiki?
+
+It turns out that even professional data scientists (that I have met) are confused as to how to use this simple equation in practice.
+
+In this write-up, I will explain why, what to do about it, and give a fairly universal live demo that can be adapted and extended for your problem. 
+
+
+
+
+## Install the toolbox
 
 `pip install git+https://github.com/jerzydziewierz/bayesian_reasoning_v0.git`
 
@@ -14,7 +47,7 @@ Read the [chapter 1](https://jerzydziewierz.github.io/bayesian_reasoning_v0/10-g
 
 Then use the the example provided to express your problem as a belief update problem. Profit!
 
-# I want a quicker way.
+## I want a quicker way.
 
 Here you go:
 
@@ -159,9 +192,12 @@ BayesianBeliefUpdateReport(
     posterior belief set b({φ}) = [    688mR,     269mR,      43mR]
 
 
-# I am not convinced
+## I am not convinced
 
 Contact me on LinkedIn and tell me why I am wrong.
 
 https://www.linkedin.com/in/dr-george-rey-dziewierz/
+
+
+---
 
