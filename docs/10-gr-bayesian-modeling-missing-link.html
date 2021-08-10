@@ -466,20 +466,14 @@ $$b(\phi|D) \leftarrow b(\phi) \times \frac{l(D|\phi)}{  \sum_{\alpha \ \in \ \{
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Here is an example how to perform this calculation. For our coin toss example, we have:</p>
-<p>$m(D \equiv 1, l(),{\phi}, b({\phi}) ) = \ldots \ 
-\ \ \
-\ldots \sum_{\alpha\in{\phi}}{l(D \equiv 1|\alpha)b(\alpha}) = \ldots \ 
-\ \ \
-\ldots l(D \equiv 1 | \phi \equiv 0.1)b(\phi \equiv 0.1)</p>
-<ul>
-<li>l(D \equiv 1 | \phi \equiv 0.5)b(\phi \equiv 0.5)</li>
-<li>l(D \equiv 1 | \phi \equiv 0.9)b(\phi \equiv 0.9)
-= \ldots \ 
-\ \ \
-\ldots 0.1<em>0.1+0.5</em>0.8+0.9*0.1 = 0.01 + 0.4 + 0.09 \ldots \ 
-\ \ \
-\ldots  \large{= 0.5}$</li>
-</ul>
+<p>$m(D \equiv 1, l(),\{\phi\}, b(\{\phi\}) ) = \ldots$</p>
+<p>$\ldots \sum_{\alpha\in\{\phi\}}{l(D \equiv 1|\alpha)b(\alpha}) = \ldots $</p>
+<p>$ \ldots l(D \equiv 1 | \phi \equiv 0.1)b(\phi \equiv 0.1) \ldots$</p>
+<p>$ \ldots + l(D \equiv 1 | \phi \equiv 0.5)b(\phi \equiv 0.5) \ldots$</p>
+<p>$ \ldots + l(D \equiv 1 | \phi \equiv 0.9)b(\phi \equiv 0.9) \ldots$</p>
+<p>$ = \ldots \\ $</p>
+<p>$ \ldots 0.1*0.1+0.5*0.8+0.9*0.1 = 0.01 + 0.4 + 0.09 \ldots \\ $</p>
+<p>$ \ldots  \large{= 0.5}$</p>
 <p>So, the marginal probability of the "1" happening, under current belief system, is 0.5.</p>
 <p>Kind of anticlimactic?</p>
 <p>Wait until you see what happens when the prior beliefs were different (unbalanced prior).</p>
