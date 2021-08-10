@@ -320,17 +320,12 @@ $$b(\phi|D) \leftarrow b(\phi) \times \frac{l(D|\phi)}{  \sum_{\alpha \ \in \ \{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Example-model-of-coin-toss,-and-constructing-it's-likelihood-function.">Example model of coin toss, and constructing it's likelihood function.<a class="anchor-link" href="#Example-model-of-coin-toss,-and-constructing-it's-likelihood-function."> </a></h2><p>The classic coin-toss toy model is a good one, and widely applicable and extensible, if explained correctly.</p>
 <h3 id="Model-description">Model description<a class="anchor-link" href="#Model-description"> </a></h3><p>Here it is so that you don't have to go back to the book.</p>
 <p>Let's say that the result of the coin toss can be 0 or 1. Our model approximates the real coin by ignoring the possibility of the real coin landing on the edge.</p>
+<hr>
 <p>Proposition: biased coin gives "1s" more often.</p>
+<hr>
 <p>Let's say that the coin could be biased(that is, unfair) and we describe this bias with a parameter $\phi$. We do not know, and cannot know directly what the true $\phi$ is. What we do know is that the $\phi$ can be anywhere from 0.0 to 1.0, with a 'fair' coin being at $\phi \equiv$ 0.50.</p>
 <ul>
 <li>0.10 means that the coin is very unfair towards only giving zeroes, </li>
@@ -399,19 +394,12 @@ $$b(\phi|D) \leftarrow b(\phi) \times \frac{l(D|\phi)}{  \sum_{\alpha \ \in \ \{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Detour:-Example-model-with-linear-regression,-and-constructing-its-likelihood-function.">Detour: Example model with linear regression, and constructing its likelihood function.<a class="anchor-link" href="#Detour:-Example-model-with-linear-regression,-and-constructing-its-likelihood-function."> </a></h2><p>I bet that you are anxious to hear if bayesian reasoning can be used to any more than coin tosses, or figuring out how if taking a coronavirus test makes sense or not.</p>
 <p>Yes, it can. Here is an example on how would you treat a linear regression problem, of the kind:</p>
 <p>Proposition: Taller people are heavier.</p>
 <p>Question: What is the proportionality coefficient?</p>
 <p>Clarification: In Bayesian belief terms, what should we believe about various propositions for the value of proportionality coefficient?</p>
-<h4 id="Model-description">Model description<a class="anchor-link" href="#Model-description"> </a></h4><p>$\mapsto$ model input: height $h$</p>
+<h3 id="Model-description">Model description<a class="anchor-link" href="#Model-description"> </a></h3><p>$\mapsto$ model input: height $h$</p>
 <p>$\mapsto$ model output: weight $w$</p>
 <p>$\mapsto$ model parameters: proportionality coefficient $\phi_{prop}$, and the uncertainty descriptor $\phi_{\sigma}$. In other words, we have two latent parameters, not one.</p>
 <p>$\mapsto$ Plant's model of uncertainty: random variable $N(0,\sigma )$</p>
@@ -423,7 +411,7 @@ $$b(\phi|D) \leftarrow b(\phi) \times \frac{l(D|\phi)}{  \sum_{\alpha \ \in \ \{
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Likelihood-function-for-linear-regression">Likelihood function for linear regression<a class="anchor-link" href="#Likelihood-function-for-linear-regression"> </a></h4><p>Here is the critical bit. We construct the equation for the likelihood function of data point $D_{weight}$ happening, given the pair of ($\phi_{prop}$, $\phi_{\sigma}$).</p>
+<h3 id="Likelihood-function-for-linear-regression">Likelihood function for linear regression<a class="anchor-link" href="#Likelihood-function-for-linear-regression"> </a></h3><p>Here is the critical bit. We construct the equation for the likelihood function of data point $D_{weight}$ happening, given the pair of ($\phi_{prop}$, $\phi_{\sigma}$).</p>
 <p>Let's say that the likelihood, or probability of this data point happening is inversely proportional to the distance of the data point value from the model's predicted noiseless value. Hence we want something like</p>
 <p>$ l( D_{weight} | (\phi_{p}, \phi_{\sigma})) \ \ \propto \ \  1/distance$</p>
 <p>Here are some proposals on how this could look like.</p>

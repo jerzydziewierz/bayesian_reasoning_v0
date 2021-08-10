@@ -16,7 +16,7 @@ entries:
       title: Worked example - coin toss - is the coin fair?
       url: 21-gr-worked-example-coin-toss.html
     - output: web,pdf
-      title: Core module
+      title: Toolbox - core
       url: core.html
     output: web
     title: bayesian_reasoning_v0
