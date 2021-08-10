@@ -114,14 +114,14 @@ def BayesianBeliefUpdateReport(
         print(f'{jax.numpy.sum(observations==0)/observation_count*100:0.1f}% of observations are D==0')
         print(f'{jax.numpy.sum(observations==1)/observation_count*100:0.1f}% of observations are D==1')
         print(f'')
-    print('for parameter set      {p}  = 'f'{pf(phi_set)}')
-    print('and prior belief set b({p}) = 'f'{pb(phi_prior_belief_set)}\n')
+    print('for parameter set      {φ}  = 'f'{pf(phi_set)}')
+    print('and prior belief set b({φ}) = 'f'{pb(phi_prior_belief_set)}\n')
     for phi_index in range(len(phi_set)):
         belief_change = posterior_belief_set[phi_index]-phi_prior_belief_set[phi_index]
         print(f'for model parameter {pf(phi_set[phi_index])} with PriorBelief = {pb(phi_prior_belief_set[phi_index])}, UpdatedBelief = {pb(posterior_belief_set[phi_index])}, change of {float(belief_change*1e3):+5.0f}mR ')
     print(f'\n')
-    print('                       {p}  = 'f'{pf(phi_set)}')
-    print('posterior belief set b({p}) = 'f'{pb(posterior_belief_set)}')
+    print('                       {φ}  = 'f'{pf(phi_set)}')
+    print('posterior belief set b({φ}) = 'f'{pb(posterior_belief_set)}')
 
 # Cell
 
